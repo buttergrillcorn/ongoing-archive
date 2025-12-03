@@ -1,0 +1,26 @@
+# Cloudflare Pages configuration for Jekyll Garden
+# Place this file at: .cloudflare/pages.yml
+
+version: 1
+
+build:
+  # The command Cloudflare will run to build your Jekyll Garden site
+  command: bundle exec jekyll build
+  # The directory Jekyll outputs static files into
+  outputDirectory: _site
+
+environment:
+  # Jekyll production mode
+  JEKYLL_ENV: "production"
+  # Required so Cloudflare doesn't install unnecessary dev gems
+  BUNDLE_WITHOUT: "development"
+  # Match your Ruby version (adjust to your own if needed)
+  RUBY_VERSION: "3.1.2"
+  # Match your Bundler version (adjust if your Gemfile.lock shows different)
+  BUNDLER_VERSION: "2.4.22"
+
+# Optional: speed up builds with caching
+# (uses Gemfile.lock checksum)
+caches:
+  - path: vendor/bundle
+    key: jekyll-garden-{{ checksum "Gemfile.lock" }}
