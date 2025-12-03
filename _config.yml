@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -24,7 +24,7 @@
 # Preferences (controls template behavior)
 preferences:
   homepage:
-    enabled: false
+    enabled: true
   search:
     enabled: true
   backlinks:
@@ -35,10 +35,10 @@ preferences:
     enabled: true
 
 # Site Configuration
-title: "Your Site Title"
-heading: "Your Name"
+title: "Ongoing Archive"
+heading: "James (Yu Li)"
 description: "A brief description of your site"
-url: "https://yoursite.com"
+url: "https://ongoing-archive.com"
 baseurl: ""
 
 # Asset Configuration
@@ -47,17 +47,17 @@ css_file: "/assets/css/style.css"
 ie_css: "/assets/css/ie-target.css"
 
 # Menu Items
-menu:
-  - title: "Notes"
-    url: "/notes"
-  - title: "Blog"
-    url: "/blog"
-  - title: "About"
-    url: "/about"
+# menu:
+#   - title: "Notes"
+#     url: "/notes"
+#   - title: "Blog"
+#     url: "/blog"
+#   - title: "About"
+#     url: "/about"
 
 # Footer
 footer:
-  copyright: "© 2024 Your Name. Contents under CC-BY-NC"
+  copyright: "© 2025 Yu Li. Contents under CC-BY-NC"
   credits:
     enabled: true
     url: "/credits"
@@ -109,3 +109,4 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+
