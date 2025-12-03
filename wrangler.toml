@@ -1,0 +1,6 @@
+name = "ongoing-archive"
+compatibility_date = "2025-12-03"
+
+[site]
+bucket = "_site"
+entry-point = "workers-site"
